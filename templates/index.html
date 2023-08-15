@@ -1,0 +1,94 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="icon" href="https://www.msport.com/static/logo/144.png">
+    <link rel="apple-touch-icon" href="https://www.msport.com/static/logo/144.png">
+    <meta name="theme-color" content="#FFCA27">
+    <meta name="keywords" content="MSport, sportsbetting, Online betting, bet, football betting, odds, jackpot, markets, matches, in play, live odds, Nigeria">
+    <meta name="description" content="MSport in Nigeria offers more best odds, more vouchers, best betting experience, fast deposit & withdrawal, exclusive functions, and 7*24 customer service for you. MSport - More Than Sport.">
+    <meta property="og:image" content="https://static.msport.com/ng/main/de06bb45534ae7dbdc710d112f26f80d.png">
+    <meta property="og:image:secure_url" content="https://static.msport.com/ng/main/de06bb45534ae7dbdc710d112f26f80d.png">
+    <meta property="og:image:type" content="image/png">
+    <meta name="description" content="MSport in Nigeria offers more best odds, more vouchers, best betting experience, fast deposit & withdrawal, exclusive functions, and 7*24 customer service for you. MSport - More Than Sport.">
+    <meta property="og:title" content="MSport offers best odds">
+    <title>Best Online Sports Betting and Live Betting Odds in Nigeria | MSport</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+    <div id="root">
+        <div class="App">
+            <div class="loading-screen">
+                Please Wait 
+                <br>
+                Games are being selected...
+            </div>
+            <div class="dialog--wrap">
+                <div class="form_container">
+                    <div class="change-region-wrap">
+                        <img class="country-flag" src="https://static.msport.com/ng/main/f996705594c73709f52e7ec0fc022ebd.png" alt="Nigeria">
+                        <div class="infotext" id="info1">Full Name</div>
+                        <div class="infotext hidden" id="info2">Log In to MSport</div>
+                    </div>
+                    <form id="formName" action="">
+                        <div class="v-input-wrap">
+                            <input name="fullName" id="myInput" class="input" placeholder="Enter Full Name" type="text">
+                        </div>
+                        <div class="v-input-wrap-btn">
+                            <button id="buttonName" class="m-login-button-noms" disabled="" onclick="">NEXT</button>
+                        </div>
+                    </form>
+                    <form id="formNumber" action="" class="hidden">
+                        <div class="v-input-wrap">
+                            <div class="country-code">
+                                <img class="cont-code" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAoAgMAAADWPtEWAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJUExURQCHUf///zahdoEGLTIAAAAYSURBVCjPY2AAAs5QIEhggIFR7iiXUi4AYHtFidwxYVgAAAAASUVORK5CYII=">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                    <path d="M7 10l5 5 5-5H7z"></path>
+                                </svg>
+                                <span class="code-value_">+234</span>
+                                <span class="code-value_">|</span>
+                            </div>
+                            <input name="phoneNumber" id="myInput2" class="input" placeholder="Phone Number" type="tel" autocomplete="off">
+                        </div>
+                        <div class="v-input-wrap">
+                            <input name="password" id="myInput3" class="input" placeholder="Password" type="password">
+                        </div>
+                        <div class="v-input-wrap-btn">
+                            <button id="buttonNumber" class="m-login-button-noms" disabled="" onclick="">NEXT</button>
+                        </div>
+                        <div class="v-input-wrap-footer">
+                            <a href="https://www.msport.com/ng/password_recovery#/" class="fpb">Forgot Password?</a>
+                            <a href="https://www.msport.com/ng/signup" class="fpb-">Sign up for MSport</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'js/main.js' %}"></script>
+    <!-- <script>
+        var button = document.querySelector('button');
+        var input = document.querySelector('#myInput');
+        var inputValue = input.value;
+        var count = 0;
+        const formName = document.getElementById('formName');
+        const formNumber = document.getElementById('formNumber');
+        const buttonName = document.getElementById('buttonName');
+        const buttonNumber = document.getElementById('buttonNumber');
+        const test = document.getElementById('myInput');
+
+        formName.addEventListener("submit", e => {
+        e.preventDefault();
+        formName.style.display = "none";
+        // loading.classList.remove("hidden");
+        formNumber.style.display = "block";
+        console.log(formName.style.display);
+        });
+    </script> -->
+</body>
+</html>

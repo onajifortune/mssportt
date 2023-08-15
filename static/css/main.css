@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    background: black;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    color: white;
+}
+
+.App {
+    text-align: center;
+}
+
+img.country-flag {
+    width: 100px;
+    vertical-align: top;
+    margin-top: -111px;
+}
+
+.cont-code {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.country-code {
+line-height: 44px;
+display: flex;
+align-items: center;
+}
+
+.code-value_ {
+padding-right: 10px;
+vertical-align: middle;
+font-size: small;
+}
+
+.v-input-wrap-footer {
+    display: flex;
+    margin: 14px 20px 0;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+a.fpb {
+    font-size: smaller;
+    color: #ccc;
+    text-decoration: none;
+}
+a.fpb- {
+font-size: 12px;
+color: #ffca27;
+text-decoration: none;
+}
+
+.infotext {
+    color: #fff;
+    font-size: 24px;
+    letter-spacing: 0;
+    opacity: .9;
+    text-align: center;
+    width: 100%;
+    margin-top: -20px;
+    font-family: sans-serif;
+}
+
+.dialog--wrap {
+    height: 200vh;
+    background: #000;
+    position: fixed;
+    width: 100%;
+}
+
+.form_container {
+    text-align: center;
+    background: #1b1b1b;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: 60px 20px 0;
+    padding: 84px 0 50px;
+    position: relative;
+}
+
+.v-input-wrap {
+    border: 1px solid #666;
+    border-radius: 24px;
+    padding: 0 16px 0 20px;
+    display: flex;
+    align-items: center;
+    margin: 20px 20px 40px;
+}
+
+.v-input-wrap-btn {
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    margin: 20px 20px 12px;
+}
+
+input.input {
+    background-color: rgba(27,27,27,0)!important;
+    padding: 4px;
+    border: none;
+    color: #fff!important;
+    outline: none;
+    font-size: 14px;
+    height: 49px;
+    width: 100%;
+}
+
+.m-login-button-noms {
+    border-radius: 22px;
+    font-size: 16px;
+    height: 44px;
+    line-height: 44px;
+    width: 100%;
+    border: none;
+    background: #999;
+    color: #333;
+}
+

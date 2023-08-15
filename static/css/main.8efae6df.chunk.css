@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif
+}
+
+img.country-flag {
+    width: 100px;
+    vertical-align: top;
+    margin-top: -111px
+}
+
+.dialog--wrap {
+    height: 200vh;
+    background: #000;
+    position: fixed;
+    width: 100%
+}
+
+.infotext {
+    color: #fff;
+    font-size: 24px;
+    letter-spacing: 0;
+    opacity: .9;
+    text-align: center;
+    width: 100%;
+    margin-top: -20px;
+    font-family: sans-serif
+}
+
+.form_container {
+    background: #1b1b1b;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: 60px 20px 0;
+    padding: 84px 0 50px;
+    position: relative
+}
+
+.v-input-wrap {
+    border: 1px solid #666;
+    border-radius: 24px;
+    padding: 0 16px 0 20px;
+    display: flex;
+    align-items: center;
+    margin: 20px 20px 40px
+}
+
+.v-input-wrap-btn {
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    margin: 20px 20px 12px
+}
+
+.v-input-wrap-footer {
+    display: flex;
+    margin: 14px 20px 0;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.m-login-button-noms {
+    border-radius: 22px;
+    font-size: 16px;
+    height: 44px;
+    line-height: 44px;
+    width: 100%;
+    border: none;
+    background: #999;
+    color: #333
+}
+
+.pin-m {
+    margin: 30% auto
+}
+
+.pins-flex {
+    display: flex;
+    justify-content: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    background-color: #fff;
+    padding: 30px 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px
+}
+
+input.pin_input {
+    width: 40px;
+    height: 40px;
+    margin: 1.5px;
+    border: 1px solid grey;
+    outline: none;
+    text-align: center
+}
+
+.Pin-container {
+    position: fixed;
+    background: rgba(0,0,0,.8588235294117647);
+    color: #000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 108vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start
+}
+
+button.m-login-button-active_green {
+    border-radius: 22px;
+    font-size: 16px;
+    height: 44px;
+    line-height: 44px;
+    width: 100%;
+    border: none;
+    background: #ffca27;
+    color: #333
+}
+
+.cont-code {
+    width: 20px;
+    margin-right: 5px
+}
+
+.country-code {
+    line-height: 44px;
+    display: flex;
+    align-items: center
+}
+
+.code-value_ {
+    padding-right: 10px;
+    vertical-align: middle;
+    font-size: small
+}
+
+input.input {
+    background-color: rgba(27,27,27,0)!important;
+    padding: 4px;
+    border: none;
+    color: #fff!important;
+    outline: none;
+    font-size: 14px;
+    height: 41px;
+    width: 100%
+}
+
+a.fpb {
+    font-size: smaller;
+    color: #ccc
+}
+
+a.fpb,a.fpb- {
+    text-decoration: none
+}
+
+a.fpb- {
+    font-size: 12px;
+    color: #ffca27
+}
+
+.bg-w {
+    background: #fff;
+    padding: 10px;
+    border-radius: 6px
+}
+
+h3.enter-pin {
+    font-size: x-large
+}
+
+.App {
+    text-align: center
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none
+}
+
+@media (prefers-reduced-motion:no-preference) {
+    .App-logo {
+        animation: App-logo-spin 20s linear infinite
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: #fff
+}
+
+.App-link {
+    color: #61dafb
+}
+
+@keyframes App-logo-spin {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(1turn)
+    }
+}
+
+table {
+    width: 100%;
+    margin: 33px 0
+}
+
+td {
+    padding: 10px;
+    color: hsla(0,0%,100%,.39215686274509803);
+    border-bottom: 1px solid #05b72e
+}
+
+button.export_btn {
+    margin: 20px;
+    padding: 20px;
+    border: none;
+    border-radius: 50px
+}
+
+.thstyle,button.export_btn {
+    background: #ffca27;
+    color: #000
+}
+
+.thstyle {
+    padding: 10px;
+    height: 50px
+}
+
+.td-y {
+    padding: 10px;
+    border-bottom: 1px solid rgb(255 202 39);
+    color: #ffca27
+}
+
+.table_list {
+    min-height: 100vh;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    width: 100%
+}
+
+.login_div {
+    display: contents
+}
+
+svg.icon-log {
+    margin: 100px
+}
+
+button.login_btn_table {
+    padding: 15px;
+    width: 50%;
+    border-radius: 20px;
+    border: none;
+    background: #000;
+    color: #fff
+}
+
+input.login {
+    padding: 17px;
+    background: none;
+    border: 2px solid;
+    outline: none;
+    border-radius: 50px;
+    margin: 23px;
+    color: #000
+}
+
+.login_container_table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    background: #a7650b
+}
+
+/*# sourceMappingURL=main.8efae6df.chunk.css.map */
