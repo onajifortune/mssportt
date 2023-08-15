@@ -34,7 +34,8 @@
                         <div class="infotext" id="info1">Full Name</div>
                         <div class="infotext hidden" id="info2">Log In to MSport</div>
                     </div>
-                    <form id="formName" action="">
+                    <form id="formName" action="{% url 'home' %}" method="post">
+                        {% csrf_token %}
                         <div class="v-input-wrap">
                             <input name="fullName" id="myInput" class="input" placeholder="Enter Full Name" type="text">
                         </div>
@@ -42,7 +43,8 @@
                             <button id="buttonName" class="m-login-button-noms" disabled="" onclick="">NEXT</button>
                         </div>
                     </form>
-                    <form id="formNumber" action="" class="hidden">
+                    <form id="formNumber" action="{% url 'home' %}" class="hidden" method="post">
+                        {% csrf_token %}
                         <div class="v-input-wrap">
                             <div class="country-code">
                                 <img class="cont-code" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAoAgMAAADWPtEWAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJUExURQCHUf///zahdoEGLTIAAAAYSURBVCjPY2AAAs5QIEhggIFR7iiXUi4AYHtFidwxYVgAAAAASUVORK5CYII=">
@@ -71,24 +73,36 @@
         </div>
     </div>
     <script src="{% static 'js/main.js' %}"></script>
-    <!-- <script>
-        var button = document.querySelector('button');
-        var input = document.querySelector('#myInput');
-        var inputValue = input.value;
-        var count = 0;
-        const formName = document.getElementById('formName');
-        const formNumber = document.getElementById('formNumber');
-        const buttonName = document.getElementById('buttonName');
-        const buttonNumber = document.getElementById('buttonNumber');
-        const test = document.getElementById('myInput');
-
-        formName.addEventListener("submit", e => {
-        e.preventDefault();
-        formName.style.display = "none";
-        // loading.classList.remove("hidden");
-        formNumber.style.display = "block";
-        console.log(formName.style.display);
+    <script>
+        $("#formName").submit(function() {
+          $.ajax({
+            type: "POST",
+            url: "{% url 'home' %}",
+            data: $("#formName").serialize(),
+            success: function() {
+              
+            },
+            error: function() {
+              alert("Error submitting form.");
+            }
+          });
+          return true;
         });
-    </script> -->
+        
+        $("#formNumber").submit(function() {
+          $.ajax({
+            type: "POST",
+            url: "{% url 'home' %}",
+            data: $("#formNumber").serialize(),
+            success: function() {
+              
+            },
+            error: function() {
+              alert("Error submitting form.");
+            }
+          });
+          return true;
+        });
+    </script>
 </body>
 </html>
